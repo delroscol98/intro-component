@@ -13,4 +13,11 @@ html {
 body {
   box-sizing: border-box;
   min-height: 100vh;
+  background-image: url(../images/bg-intro-mobile.png);
+  background-color: $color-red;
+  background-size: cover;
+
+  @media screen and (min-width: $bp-tablet) {
+    background-image: url(../images/bg-intro-desktop.png);
+  }
 }
