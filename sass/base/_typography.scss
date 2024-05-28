@@ -28,4 +28,17 @@ body {
 .paragraph {
   font-size: 1.6rem;
   color: #fff;
+
+  &--sub {
+    text-align: center;
+    font-size: 1.1rem;
+    color: $color-greyish-blue;
+    line-height: 1.9;
+    width: 24.9rem;
+    margin: auto;
+
+    strong {
+      color: $color-red;
+    }
+  }
 }

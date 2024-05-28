@@ -20,7 +20,11 @@ body {
       background-image: url(../images/bg-intro-desktop.png); } }
 
 main {
-  margin-top: 8.4rem; }
+  margin-top: 8.4rem;
+  padding-bottom: 6.8rem;
+  display: flex;
+  flex-direction: column;
+  gap: 6.4rem; }
 
 body {
   font-family: "Poppins", sans-serif; }
@@ -44,8 +48,59 @@ body {
 .paragraph {
   font-size: 1.6rem;
   color: #fff; }
+  .paragraph--sub {
+    text-align: center;
+    font-size: 1.1rem;
+    color: #b9b6d3;
+    line-height: 1.9;
+    width: 24.9rem;
+    margin: auto; }
+    .paragraph--sub strong {
+      color: #ff7a7a; }
 
 .text {
   width: 87.2%;
   margin: auto;
   text-align: center; }
+
+.trial {
+  display: grid;
+  gap: 2.4rem; }
+  .trial__btn {
+    font-family: "Poppins", sans-serif;
+    width: 87.2%;
+    display: block;
+    padding: 1.8rem 4.3rem;
+    margin: auto;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 1rem;
+    background-color: #6055a5;
+    color: #fff;
+    box-shadow: 0 0.8rem 0 rgba(0, 0, 0, 0.15); }
+  .trial__form {
+    padding: 2.4rem;
+    width: 87.2%;
+    margin: auto;
+    background-color: #fff;
+    box-shadow: 0 0.8rem 0 rgba(0, 0, 0, 0.15);
+    position: relative;
+    display: grid;
+    gap: 1.6rem;
+    border-radius: 1rem; }
+    .trial__form--input {
+      display: block;
+      width: 100%;
+      margin: auto;
+      padding: 1.5rem 2rem;
+      border: 1px solid #dedede;
+      border-radius: 0.5rem;
+      font-family: "Poppins", sans-serif; }
+    .trial__form--btn {
+      border: none;
+      padding: 1.5rem 4.3rem;
+      background-color: #38cc8c;
+      color: #fff;
+      border-radius: 0.5rem;
+      box-shadow: inset 0 -0.4rem 0 rgba(0, 0, 0, 0.1);
+      font-size: 1.5rem; }

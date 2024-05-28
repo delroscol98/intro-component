@@ -1,0 +1,50 @@
+.trial {
+  display: grid;
+  gap: 2.4rem;
+
+  &__btn {
+    font-family: "Poppins", sans-serif;
+    width: 87.2%;
+    display: block;
+    padding: 1.8rem 4.3rem;
+    margin: auto;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 1rem;
+    background-color: $color-blue;
+    color: #fff;
+    box-shadow: $box-shadow;
+  }
+
+  &__form {
+    padding: 2.4rem;
+    width: 87.2%;
+    margin: auto;
+    background-color: #fff;
+    box-shadow: $box-shadow;
+    position: relative;
+    display: grid;
+    gap: 1.6rem;
+    border-radius: 1rem;
+
+    &--input {
+      display: block;
+      width: 100%;
+      margin: auto;
+      padding: 1.5rem 2rem;
+      border: 1px solid #dedede;
+      border-radius: 0.5rem;
+      font-family: "Poppins", sans-serif;
+    }
+
+    &--btn {
+      border: none;
+      padding: 1.5rem 4.3rem;
+      background-color: $color-green;
+      color: #fff;
+      border-radius: 0.5rem;
+      box-shadow: inset 0 -0.4rem 0 rgba(#000, 0.1);
+      font-size: 1.5rem;
+    }
+  }
+}
