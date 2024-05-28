@@ -19,6 +19,12 @@ body {
     body {
       background-image: url(../images/bg-intro-desktop.png); } }
 
+main {
+  margin-top: 8.4rem; }
+
+body {
+  font-family: "Poppins", sans-serif; }
+
 .font-reg {
   font-weight: 400; }
 
@@ -32,4 +38,14 @@ body {
   font-weight: 700; }
 
 .heading-1 {
-  font-size: calc(clamp(2.8rem, 7.467vw, 5rem)); }
+  font-size: calc(clamp(2.8rem, 7.467vw, 5rem));
+  color: #fff; }
+
+.paragraph {
+  font-size: 1.6rem;
+  color: #fff; }
+
+.text {
+  width: 87.2%;
+  margin: auto;
+  text-align: center; }
