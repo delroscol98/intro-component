@@ -28,6 +28,8 @@ main {
   @media screen and (min-width: 64em) {
     main {
       flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
       padding: 7.7rem 16.5rem;
       margin: 0;
       gap: 4.5rem; } }
@@ -76,11 +78,15 @@ body {
   @media screen and (min-width: 64em) {
     .text {
       text-align: left;
-      gap: 1.1rem; } }
+      gap: 1.1rem;
+      margin: 0; } }
 
 .trial {
   display: grid;
   gap: 2.4rem; }
+  @media screen and (min-width: 64em) {
+    .trial {
+      width: 54rem; } }
   .trial__btn {
     font-family: "Poppins", sans-serif;
     width: calc(min(87.2%, 54rem));
@@ -92,7 +98,12 @@ body {
     border-radius: 1rem;
     background-color: #6055a5;
     color: #fff;
-    box-shadow: 0 0.8rem 0 rgba(0, 0, 0, 0.15); }
+    box-shadow: 0 0.8rem 0 rgba(0, 0, 0, 0.15);
+    cursor: pointer; }
+    @media screen and (min-width: 64em) {
+      .trial__btn {
+        width: 100%;
+        margin: 0; } }
   .trial__form {
     padding: 2.4rem;
     width: calc(min(87.2%, 54rem));
@@ -103,6 +114,10 @@ body {
     display: grid;
     gap: 1.6rem;
     border-radius: 1rem; }
+    @media screen and (min-width: 64em) {
+      .trial__form {
+        width: 100%;
+        margin: 0; } }
     .trial__form--box {
       position: relative; }
     .trial__form--input {
@@ -125,4 +140,5 @@ body {
       color: #fff;
       border-radius: 0.5rem;
       box-shadow: inset 0 -0.4rem 0 rgba(0, 0, 0, 0.1);
-      font-size: 1.5rem; }
+      font-size: 1.5rem;
+      cursor: pointer; }
