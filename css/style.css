@@ -67,7 +67,12 @@ body {
   .paragraph--error {
     color: #ff7a7a;
     text-align: right;
-    font-size: 1.1rem; }
+    font-size: 1.1rem;
+    font-style: italic;
+    opacity: 0;
+    transition: all 0.2s; }
+  .paragraph--error.invalid {
+    opacity: 1; }
 
 .text {
   width: calc(min(87.2%, 52.5rem));
@@ -127,12 +132,22 @@ body {
       padding: 1.5rem 5rem 1.5rem 2rem;
       border: 1px solid #dedede;
       border-radius: 0.5rem;
-      font-family: "Poppins", sans-serif; }
+      font-family: "Poppins", sans-serif;
+      transition: all 0.2s; }
+      .trial__form--input:focus {
+        outline: none;
+        border: 1px solid #6055a5; }
     .trial__form--error-icon {
       width: 2.4rem;
       position: absolute;
       top: 1.5rem;
-      right: 2.7rem; }
+      right: 2.7rem;
+      opacity: 0;
+      visibility: hidden;
+      transition: all 0.2s; }
+    .trial__form--error-icon.invalid {
+      opacity: 1;
+      visibility: visible; }
     .trial__form--btn {
       border: none;
       padding: 1.5rem 4.3rem;

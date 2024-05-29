@@ -54,6 +54,12 @@
       border: 1px solid #dedede;
       border-radius: 0.5rem;
       font-family: "Poppins", sans-serif;
+      transition: all 0.2s;
+
+      &:focus {
+        outline: none;
+        border: 1px solid $color-blue;
+      }
     }
 
     &--error-icon {
@@ -61,6 +67,14 @@
       position: absolute;
       top: 1.5rem;
       right: 2.7rem;
+      opacity: 0;
+      visibility: hidden;
+      transition: all 0.2s;
+    }
+
+    &--error-icon.invalid {
+      opacity: 1;
+      visibility: visible;
     }
 
     &--btn {

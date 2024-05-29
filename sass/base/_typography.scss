@@ -45,5 +45,12 @@ body {
     color: $color-red;
     text-align: right;
     font-size: 1.1rem;
+    font-style: italic;
+    opacity: 0;
+    transition: all 0.2s;
+  }
+
+  &--error.invalid {
+    opacity: 1;
   }
 }
