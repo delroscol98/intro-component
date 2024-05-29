@@ -32,35 +32,98 @@
           <strong>Try it free 7 days</strong> then $20/mo. thereafter
         </button>
         <form action="#" class="trial__form">
-          <input
-            class="trial__form--input font-semi-bold"
-            type="text"
-            name="first-name"
-            id="first-name"
-            placeholder="First Name"
-          />
-          <input
-            class="trial__form--input font-semi-bold"
-            type="text"
-            name="last-name"
-            id="last-name"
-            placeholder="Last Name"
-          />
-          <input
-            class="trial__form--input font-semi-bold"
-            type="email"
-            name="email"
-            id="email"
-            placeholder="Email Address"
-          />
-          <input
-            class="trial__form--input font-semi-bold"
-            type="password"
-            name="password"
-            id="password"
-            placeholder="Password"
-          />
-          <button class="trial__form--btn font-semi-bold">
+          <article class="trial__form--box">
+            <input
+              class="trial__form--input font-semi-bold"
+              type="text"
+              name="first-name"
+              id="first-name"
+              placeholder="First Name"
+            />
+            <svg
+              class="trial__form--error-icon"
+              width="24"
+              height="24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g fill="none" fill-rule="evenodd">
+                <circle fill="#FF7979" cx="12" cy="12" r="12" />
+                <rect fill="#FFF" x="11" y="6" width="2" height="9" rx="1" />
+                <rect fill="#FFF" x="11" y="17" width="2" height="2" rx="1" />
+              </g>
+            </svg>
+            <p class="paragraph--error"><em>First name cannot be empty</em></p>
+          </article>
+          <article class="trial__form--box">
+            <input
+              class="trial__form--input font-semi-bold"
+              type="text"
+              name="last-name"
+              id="last-name"
+              placeholder="Last Name"
+            />
+            <svg
+              class="trial__form--error-icon"
+              width="24"
+              height="24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g fill="none" fill-rule="evenodd">
+                <circle fill="#FF7979" cx="12" cy="12" r="12" />
+                <rect fill="#FFF" x="11" y="6" width="2" height="9" rx="1" />
+                <rect fill="#FFF" x="11" y="17" width="2" height="2" rx="1" />
+              </g>
+            </svg>
+            <p class="paragraph--error"><em>Last name cannot be empty</em></p>
+          </article>
+          <article class="trial__form--box">
+            <input
+              class="trial__form--input font-semi-bold"
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Email Address"
+            />
+            <svg
+              class="trial__form--error-icon"
+              width="24"
+              height="24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g fill="none" fill-rule="evenodd">
+                <circle fill="#FF7979" cx="12" cy="12" r="12" />
+                <rect fill="#FFF" x="11" y="6" width="2" height="9" rx="1" />
+                <rect fill="#FFF" x="11" y="17" width="2" height="2" rx="1" />
+              </g>
+            </svg>
+            <p class="paragraph--error">
+              <em> Looks like this is not an email</em>
+            </p>
+          </article>
+          <article class="trial__form--box">
+            <input
+              class="trial__form--input font-semi-bold"
+              type="password"
+              name="password"
+              id="password"
+              placeholder="Password"
+            />
+            <svg
+              class="trial__form--error-icon"
+              width="24"
+              height="24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g fill="none" fill-rule="evenodd">
+                <circle fill="#FF7979" cx="12" cy="12" r="12" />
+                <rect fill="#FFF" x="11" y="6" width="2" height="9" rx="1" />
+                <rect fill="#FFF" x="11" y="17" width="2" height="2" rx="1" />
+              </g>
+            </svg>
+            <p class="paragraph--error"><em>Password cannot be empty</em></p>
+          </article>
+
+          <button type="submit" class="trial__form--btn font-semi-bold">
             CLAIM YOUR FREE TRIAL
           </button>
           <p class="paragraph--sub">

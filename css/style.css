@@ -7,15 +7,15 @@
   box-sizing: inherit; }
 
 html {
-  font-size: 62.5%; }
+  font-size: 62.5%;
+  box-sizing: border-box; }
 
 body {
-  box-sizing: border-box;
   min-height: 100vh;
   background-image: url(../images/bg-intro-mobile.png);
   background-color: #ff7a7a;
   background-size: cover; }
-  @media screen and (min-width: 27em) {
+  @media screen and (min-width: 64em) {
     body {
       background-image: url(../images/bg-intro-desktop.png); } }
 
@@ -25,6 +25,12 @@ main {
   display: flex;
   flex-direction: column;
   gap: 6.4rem; }
+  @media screen and (min-width: 64em) {
+    main {
+      flex-direction: row;
+      padding: 7.7rem 16.5rem;
+      margin: 0;
+      gap: 4.5rem; } }
 
 body {
   font-family: "Poppins", sans-serif; }
@@ -53,22 +59,31 @@ body {
     font-size: 1.1rem;
     color: #b9b6d3;
     line-height: 1.9;
-    width: 24.9rem;
     margin: auto; }
     .paragraph--sub strong {
       color: #ff7a7a; }
+  .paragraph--error {
+    color: #ff7a7a;
+    text-align: right;
+    font-size: 1.1rem; }
 
 .text {
-  width: 87.2%;
+  width: calc(min(87.2%, 52.5rem));
   margin: auto;
-  text-align: center; }
+  text-align: center;
+  display: grid;
+  gap: 1.6rem; }
+  @media screen and (min-width: 64em) {
+    .text {
+      text-align: left;
+      gap: 1.1rem; } }
 
 .trial {
   display: grid;
   gap: 2.4rem; }
   .trial__btn {
     font-family: "Poppins", sans-serif;
-    width: 87.2%;
+    width: calc(min(87.2%, 54rem));
     display: block;
     padding: 1.8rem 4.3rem;
     margin: auto;
@@ -80,7 +95,7 @@ body {
     box-shadow: 0 0.8rem 0 rgba(0, 0, 0, 0.15); }
   .trial__form {
     padding: 2.4rem;
-    width: 87.2%;
+    width: calc(min(87.2%, 54rem));
     margin: auto;
     background-color: #fff;
     box-shadow: 0 0.8rem 0 rgba(0, 0, 0, 0.15);
@@ -88,14 +103,21 @@ body {
     display: grid;
     gap: 1.6rem;
     border-radius: 1rem; }
+    .trial__form--box {
+      position: relative; }
     .trial__form--input {
       display: block;
       width: 100%;
       margin: auto;
-      padding: 1.5rem 2rem;
+      padding: 1.5rem 5rem 1.5rem 2rem;
       border: 1px solid #dedede;
       border-radius: 0.5rem;
       font-family: "Poppins", sans-serif; }
+    .trial__form--error-icon {
+      width: 2.4rem;
+      position: absolute;
+      top: 1.5rem;
+      right: 2.7rem; }
     .trial__form--btn {
       border: none;
       padding: 1.5rem 4.3rem;

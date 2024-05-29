@@ -1,5 +1,12 @@
 .text {
-  width: 87.2%;
+  width: calc(min(87.2%, 52.5rem));
   margin: auto;
   text-align: center;
+  display: grid;
+  gap: 1.6rem;
+
+  @media screen and (min-width: $bp-desktop) {
+    text-align: left;
+    gap: 1.1rem;
+  }
 }

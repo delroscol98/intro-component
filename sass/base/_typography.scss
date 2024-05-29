@@ -34,11 +34,16 @@ body {
     font-size: 1.1rem;
     color: $color-greyish-blue;
     line-height: 1.9;
-    width: 24.9rem;
     margin: auto;
 
     strong {
       color: $color-red;
     }
+  }
+
+  &--error {
+    color: $color-red;
+    text-align: right;
+    font-size: 1.1rem;
   }
 }

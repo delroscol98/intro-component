@@ -4,7 +4,7 @@
 
   &__btn {
     font-family: "Poppins", sans-serif;
-    width: 87.2%;
+    width: calc(min(87.2%, 54rem));
     display: block;
     padding: 1.8rem 4.3rem;
     margin: auto;
@@ -18,7 +18,7 @@
 
   &__form {
     padding: 2.4rem;
-    width: 87.2%;
+    width: calc(min(87.2%, 54rem));
     margin: auto;
     background-color: #fff;
     box-shadow: $box-shadow;
@@ -27,14 +27,25 @@
     gap: 1.6rem;
     border-radius: 1rem;
 
+    &--box {
+      position: relative;
+    }
+
     &--input {
       display: block;
       width: 100%;
       margin: auto;
-      padding: 1.5rem 2rem;
+      padding: 1.5rem 5rem 1.5rem 2rem;
       border: 1px solid #dedede;
       border-radius: 0.5rem;
       font-family: "Poppins", sans-serif;
+    }
+
+    &--error-icon {
+      width: 2.4rem;
+      position: absolute;
+      top: 1.5rem;
+      right: 2.7rem;
     }
 
     &--btn {
