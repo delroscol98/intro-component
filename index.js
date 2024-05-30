@@ -57,8 +57,24 @@ const validatePassword = () => {
   }
 };
 
+const validateEmail = () => {
+  const [errorMsg, errorIcon] = getErrorIconAndMsg(email);
+
+  const regx = /^([a-zA-Z0-9\._]+)@([a-zA-Z0-9])+.([a-z]+)(.[a-z]+)?$/;
+  const emailValue = email.value.trim();
+
+  if (!regx.test(emailValue)) {
+    errorIcon.classList.add("invalid");
+    errorMsg.classList.add("invalid");
+  } else {
+    errorIcon.classList.remove("invalid");
+    errorMsg.classList.remove("invalid");
+  }
+};
+
 const validateForm = () => {
   validateFirstName();
   validateLastName();
+  validateEmail();
   validatePassword();
 };
