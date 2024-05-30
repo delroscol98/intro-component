@@ -35,6 +35,18 @@
         </button>
         <form action="#" class="trial__form">
           <article class="trial__form--box">
+            <svg
+              class="trial__form--error-icon"
+              width="24"
+              height="24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g fill="none" fill-rule="evenodd">
+                <circle fill="#FF7979" cx="12" cy="12" r="12" />
+                <rect fill="#FFF" x="11" y="6" width="2" height="9" rx="1" />
+                <rect fill="#FFF" x="11" y="17" width="2" height="2" rx="1" />
+              </g>
+            </svg>
             <input
               class="trial__form--input font-semi-bold"
               type="text"
@@ -42,6 +54,9 @@
               id="first-name"
               placeholder="First Name"
             />
+            <p class="paragraph--error">First name cannot be empty</p>
+          </article>
+          <article class="trial__form--box">
             <svg
               class="trial__form--error-icon"
               width="24"
@@ -54,9 +69,6 @@
                 <rect fill="#FFF" x="11" y="17" width="2" height="2" rx="1" />
               </g>
             </svg>
-            <p class="paragraph--error">First name cannot be empty</p>
-          </article>
-          <article class="trial__form--box">
             <input
               class="trial__form--input font-semi-bold"
               type="text"
@@ -64,6 +76,9 @@
               id="last-name"
               placeholder="Last Name"
             />
+            <p class="paragraph--error">Last name cannot be empty</p>
+          </article>
+          <article class="trial__form--box">
             <svg
               class="trial__form--error-icon"
               width="24"
@@ -76,9 +91,6 @@
                 <rect fill="#FFF" x="11" y="17" width="2" height="2" rx="1" />
               </g>
             </svg>
-            <p class="paragraph--error">Last name cannot be empty</p>
-          </article>
-          <article class="trial__form--box">
             <input
               class="trial__form--input font-semi-bold"
               type="email"
@@ -86,6 +98,9 @@
               id="email"
               placeholder="Email Address"
             />
+            <p class="paragraph--error">Looks like this is not an email</p>
+          </article>
+          <article class="trial__form--box">
             <svg
               class="trial__form--error-icon"
               width="24"
@@ -98,9 +113,6 @@
                 <rect fill="#FFF" x="11" y="17" width="2" height="2" rx="1" />
               </g>
             </svg>
-            <p class="paragraph--error">Looks like this is not an email</p>
-          </article>
-          <article class="trial__form--box">
             <input
               class="trial__form--input font-semi-bold"
               type="password"
@@ -108,18 +120,6 @@
               id="password"
               placeholder="Password"
             />
-            <svg
-              class="trial__form--error-icon"
-              width="24"
-              height="24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <g fill="none" fill-rule="evenodd">
-                <circle fill="#FF7979" cx="12" cy="12" r="12" />
-                <rect fill="#FFF" x="11" y="6" width="2" height="9" rx="1" />
-                <rect fill="#FFF" x="11" y="17" width="2" height="2" rx="1" />
-              </g>
-            </svg>
             <p class="paragraph--error">Password cannot be empty</p>
           </article>
 

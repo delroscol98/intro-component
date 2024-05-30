@@ -6,7 +6,6 @@ const password = document.getElementById("password");
 
 form.addEventListener("submit", (e) => {
   e.preventDefault();
-
   validateForm();
 });
 
@@ -21,40 +20,17 @@ const getErrorIconAndMsg = (element) => {
   return [errorMsg, errorIcon];
 };
 
-const validateFirstName = () => {
-  const [errorMsg, errorIcon] = getErrorIconAndMsg(firstName);
-  const value = firstName.value.trim();
-  if (value === "") {
-    errorIcon.classList.add("invalid");
-    errorMsg.classList.add("invalid");
-  } else {
-    errorIcon.classList.remove("invalid");
-    errorMsg.classList.remove("invalid");
-  }
-};
+const validateNonEmptyInput = (
+  element,
+  getIconAndMsg = getErrorIconAndMsg,
+  classStr = "invalid"
+) => {
+  const [msg, icon] = getIconAndMsg(element);
+  const value = element.value.trim();
 
-const validateLastName = () => {
-  const [errorMsg, errorIcon] = getErrorIconAndMsg(lastName);
-  const value = lastName.value.trim();
-  if (value === "") {
-    errorIcon.classList.add("invalid");
-    errorMsg.classList.add("invalid");
-  } else {
-    errorIcon.classList.remove("invalid");
-    errorMsg.classList.remove("invalid");
-  }
-};
-
-const validatePassword = () => {
-  const [errorMsg, errorIcon] = getErrorIconAndMsg(password);
-  const value = password.value.trim();
-  if (value === "") {
-    errorIcon.classList.add("invalid");
-    errorMsg.classList.add("invalid");
-  } else {
-    errorIcon.classList.remove("invalid");
-    errorMsg.classList.remove("invalid");
-  }
+  value === ""
+    ? (icon.classList.add(classStr), msg.classList.add(classStr))
+    : (icon.classList.remove(classStr), msg.classList.remove(classStr));
 };
 
 const validateEmail = () => {
@@ -63,18 +39,15 @@ const validateEmail = () => {
   const regx = /^([a-zA-Z0-9\._]+)@([a-zA-Z0-9])+.([a-z]+)(.[a-z]+)?$/;
   const emailValue = email.value.trim();
 
-  if (!regx.test(emailValue)) {
-    errorIcon.classList.add("invalid");
-    errorMsg.classList.add("invalid");
-  } else {
-    errorIcon.classList.remove("invalid");
-    errorMsg.classList.remove("invalid");
-  }
+  !regx.test(emailValue)
+    ? (errorIcon.classList.add("invalid"), errorMsg.classList.add("invalid"))
+    : (errorIcon.classList.remove("invalid"),
+      errorMsg.classList.remove("invalid"));
 };
 
 const validateForm = () => {
-  validateFirstName();
-  validateLastName();
+  validateNonEmptyInput(firstName);
+  validateNonEmptyInput(lastName);
   validateEmail();
-  validatePassword();
+  validateNonEmptyInput(password);
 };

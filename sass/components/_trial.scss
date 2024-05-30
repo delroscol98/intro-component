@@ -77,6 +77,10 @@
       visibility: visible;
     }
 
+    &--error-icon.invalid ~ &--input {
+      border: 1px solid $color-red;
+    }
+
     &--btn {
       border: none;
       padding: 1.5rem 4.3rem;

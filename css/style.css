@@ -148,6 +148,8 @@ body {
     .trial__form--error-icon.invalid {
       opacity: 1;
       visibility: visible; }
+    .trial__form--error-icon.invalid ~ .trial__form--input {
+      border: 1px solid #ff7a7a; }
     .trial__form--btn {
       border: none;
       padding: 1.5rem 4.3rem;
